@@ -1,6 +1,7 @@
 {
   "name": "@tummycrypt/tinyland-credentials-helper",
   "version": "0.2.2",
+  "private": true,
   "description": "Credentials helper utilities for user onboarding, download responses, email templates, and secure share links",
   "type": "module",
   "main": "./dist/index.js",
@@ -20,7 +21,6 @@
     "build": "tsc",
     "dev": "tsc --watch",
     "clean": "rm -rf dist",
-    "prepublishOnly": "pnpm build && pnpm check:package",
     "test": "vitest run",
     "test:coverage": "vitest --coverage",
     "typecheck": "tsc --noEmit",
@@ -30,7 +30,7 @@
   "license": "Zlib AND LicenseRef-Tinyland-Proprietary",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tinyland-inc/tinyland-credentials-helper.git"
+    "url": "git+https://github.com/xoxd-ai/tinyland-credentials-helper.git"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
@@ -41,13 +41,9 @@
   "engines": {
     "node": ">=22.0.0"
   },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "access": "public"
-  },
   "packageManager": "pnpm@10.13.1",
-  "homepage": "https://github.com/tinyland-inc/tinyland-credentials-helper",
+  "homepage": "https://github.com/xoxd-ai/tinyland-credentials-helper",
   "bugs": {
-    "url": "https://github.com/tinyland-inc/tinyland-credentials-helper/issues"
+    "url": "https://github.com/xoxd-ai/tinyland-credentials-helper/issues"
   }
 }
